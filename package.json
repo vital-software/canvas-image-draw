@@ -1,0 +1,70 @@
+{
+  "name": "canvas-image-draw",
+  "version": "0.9.0",
+  "description": "Draw a cropped image to a <canvas> element",
+  "license": "MIT",
+  "repository": "vital-software/canvas-image-draw",
+  "homepage": "https://github.com/vital-software/canvas-image-draw#readme",
+  "author": "Te Riu Warren <teriu@teriu.name>",
+  "bugs": {
+    "url": "https://github.com/vital-software/canvas-image-draw/issues"
+  },
+  "engines": {
+    "node": ">=7.6.0"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet --fix",
+    "precommit": "yarn run lint",
+    "test": "jest --coverage"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/tests/**"
+    ],
+    "coverageDirectory": "<rootDir>/coverage/",
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "jsx",
+      "node"
+    ],
+    "modulePaths": [
+      "<rootDir>/src/"
+    ],
+    "roots": [
+      "<rootDir>/src/"
+    ],
+    "setupFiles": [
+      "<rootDir>/test-setup.js"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testRegex": "(/tests/.*|\\.(test|spec))\\.(js|jsx)$",
+    "transform": {
+      ".*": "babel-jest"
+    }
+  },
+  "devDependencies": {
+    "babel-jest": "^19.0.0",
+    "canvas-prebuilt": "^1.6.0",
+    "eslint": "^3.16.1",
+    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-compat": "^1.0.2",
+    "eslint-plugin-filenames": "^1.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jest": "^19.0.1",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.8.0",
+    "front-end-scripts": "vital-software/front-end-scripts#6d0cdad1",
+    "husky": "^0.13.0",
+    "jest": "^19.0.1"
+  },
+  "dependencies": {
+    "exif-js": "^2.2.1",
+    "regenerator": "^0.9.7"
+  }
+}
