@@ -12,9 +12,11 @@
   "engines": {
     "node": ">=7.6.0"
   },
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "babel src --out-dir dist --ignore spec.js,test.js",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet --fix",
+    "prepublish": "yarn run build",
     "precommit": "yarn run lint",
     "test": "jest --coverage"
   },
@@ -37,9 +39,6 @@
     "roots": [
       "<rootDir>/src/"
     ],
-    "setupFiles": [
-      "<rootDir>/test-setup.js"
-    ],
     "testPathIgnorePatterns": [
       "/node_modules/"
     ],
@@ -49,6 +48,7 @@
     }
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
     "babel-jest": "^19.0.0",
     "canvas-prebuilt": "^1.6.0",
     "eslint": "^3.16.1",

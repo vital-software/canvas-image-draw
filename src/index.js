@@ -1,6 +1,5 @@
-import CanvasDraw from 'canvas-draw'
+import CanvasDraw from './canvas-draw'
 import Exif from 'exif-js'
-import 'regenerator-runtime/runtime'
 
 const DEFAULT_PROPERTIES = {
     x: 0,

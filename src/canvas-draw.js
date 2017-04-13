@@ -7,7 +7,7 @@ import {
     ORIENTATION_ROTATED_RIGHT,
     ORIENTATION_VERTICAL_REVERSED,
     RADIAN_CONVERT
-} from 'constants'
+} from './constants'
 
 export default class CanvasDraw {
     constructor(canvas) {

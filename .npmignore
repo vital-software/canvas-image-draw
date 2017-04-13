@@ -2,5 +2,5 @@
 *.map
 .tmp
 /coverage
-/dist
 /node_modules
+/src

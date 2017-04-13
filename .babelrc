@@ -1,3 +1,19 @@
 {
-  "extends": "./node_modules/front-end-scripts/.babelrc"
+  "plugins": [
+    "transform-object-assign",
+    "transform-object-rest-spread"
+  ],
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": [
+          "last 2 chrome versions",
+          "last 2 opera versions",
+          "edge > 15",
+          "firefox > 52",
+          "safari > 10.3"
+        ]
+      },
+    }]
+  ]
 }
