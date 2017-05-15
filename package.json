@@ -1,6 +1,6 @@
 {
   "name": "canvas-image-draw",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Draw a cropped image to a <canvas> element",
   "license": "MIT",
   "repository": "vital-software/canvas-image-draw",
@@ -49,19 +49,21 @@
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
     "babel-jest": "^19.0.0",
     "canvas-prebuilt": "^1.6.0",
     "eslint": "^3.16.1",
     "eslint-plugin-babel": "^4.0.0",
     "eslint-plugin-compat": "^1.0.2",
     "eslint-plugin-filenames": "^1.1.0",
+    "eslint-plugin-flowtype": "^2.33.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jest": "^19.0.1",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.8.0",
-    "front-end-scripts": "vital-software/front-end-scripts#6d0cdad1",
     "husky": "^0.13.0",
-    "jest": "^19.0.1"
+    "jest": "^19.0.1",
+    "vitalizer": "^1.0.1"
   },
   "dependencies": {
     "exif-js": "^2.2.1",

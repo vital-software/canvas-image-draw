@@ -1,3 +1,3 @@
 {
-  "extends": "./node_modules/front-end-scripts/.eslintrc.json"
+  "extends": "./node_modules/vitalizer/.eslintrc.json"
 }
