@@ -19,7 +19,8 @@ async function getOrientationFromImage(image) {
     return orientation
 }
 
-export default function draw(image, canvasElement, properties = DEFAULT_PROPERTIES) {
+export default function draw(image, canvasElement, props) {
+    const properties = { ...DEFAULT_PROPERTIES, ...props }
     const { height, width, x, y } = properties
 
     if (!image) {
@@ -32,8 +33,7 @@ export default function draw(image, canvasElement, properties = DEFAULT_PROPERTI
 
     const canvas = new CanvasDraw(canvasElement)
 
-    return getOrientationFromImage(image)
-    .then((orientation) => {
+    return getOrientationFromImage(image).then((orientation) => {
         canvas.setOrientation(orientation)
 
         canvas.setCanvasOrientation(width, height)
