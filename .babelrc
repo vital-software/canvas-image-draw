@@ -1,19 +1,4 @@
 {
-  "plugins": [
-    "transform-object-assign",
-    "transform-object-rest-spread"
-  ],
-  "presets": [
-    ["env", {
-      "targets": {
-        "browsers": [
-          "last 2 chrome versions",
-          "last 2 opera versions",
-          "edge > 15",
-          "firefox > 52",
-          "safari > 10.3"
-        ]
-      },
-    }]
-  ]
+  "extends": "./node_modules/vitalizer/.babelrc",
+  "plugins": ["transform-es2015-modules-commonjs"]
 }

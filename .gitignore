@@ -1,6 +1,6 @@
 *.log
 *.map
+.env
 .tmp
 /coverage
-/dist
 /node_modules

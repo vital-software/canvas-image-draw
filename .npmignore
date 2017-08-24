@@ -1,5 +1,1 @@
-*.log
-*.map
-.tmp
-/coverage
-/node_modules
+/app
