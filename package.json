@@ -51,7 +51,7 @@
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-eslint": "^8.0.0",
-    "babel-jest": "^21.0.2",
+    "babel-jest": "^20.0.3",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
     "canvas-prebuilt": "^1.6.5-prerelease.1",
     "eslint": "^4.6.1",
@@ -64,7 +64,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.3.0",
     "husky": "^0.14.3",
-    "jest": "^21.1.0",
+    "jest": "^20.0.4",
     "prettier-eslint-cli": "^4.3.2",
     "stylelint": "^8.1.1",
     "vitalizer": "^3.0.0"
