@@ -1,4 +1,4 @@
-# Canvas Image Draw
+# Canvas Image Draw [![Build Status](https://travis-ci.org/vital-software/canvas-image-draw.svg)](https://travis-ci.org/vital-software/canvas-image-draw) [![npm version](https://badge.fury.io/js/canvas-image-draw.svg)](https://badge.fury.io/js/canvas-image-draw)
 Draw a cropped image to a &lt;canvas&gt; element
 
 
