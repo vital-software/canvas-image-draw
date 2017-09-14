@@ -2,5 +2,6 @@
 *.map
 .env
 .tmp
-/coverage
-/node_modules
+coverage
+lib
+node_modules
