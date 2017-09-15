@@ -70,6 +70,6 @@
     "vitalizer": "^3.0.0"
   },
   "dependencies": {
-    "exif-js": "^2.2.1"
+    "exif-js": "2.1.1"
   }
 }

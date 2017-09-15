@@ -8,13 +8,18 @@ const DEFAULT_PROPERTIES = {
     height: 200
 }
 
-// TODO: Test this works on iOS devices
 async function getOrientationFromImage(image) {
-    let orientation = null
+    const orientation = await new Promise((resolve) =>
+        Exif.getData(image, function() {
+            const orientation = Exif.getTag(this, 'Orientation')
 
-    await Exif.getData(image, () => {
-        orientation = Exif.getTag(this, 'Orientation')
-    })
+            if (orientation) {
+                resolve(orientation)
+            } else {
+                resolve(null)
+            }
+        })
+    )
 
     return orientation
 }
