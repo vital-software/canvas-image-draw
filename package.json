@@ -68,7 +68,7 @@
     "jest": "22.4.0",
     "prettier-eslint-cli": "4.3.2",
     "semantic-release": "12.4.1",
-    "stylelint": "9.0.0",
+    "stylelint": "9.1.0",
     "vitalizer": "3.0.0"
   },
   "dependencies": {
