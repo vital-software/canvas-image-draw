@@ -1,1 +1,4 @@
 app
+Dockerfile
+docker-compose.*
+.buildkite
