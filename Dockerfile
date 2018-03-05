@@ -25,7 +25,7 @@ WORKDIR /app
 ENV PATH=./node_modules/.bin:$PATH
 
 ADD package.json yarn.lock /app/
-RUN yarn install --ignore-scripts
+RUN yarn install
 
 ADD . /app
 
