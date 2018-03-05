@@ -6,6 +6,7 @@ RUN apk update && \
     apk add --no-cache \
       ca-certificates \
       git \
+      libpng-dev \
       openssl \
       tzdata && \
     wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://raw.githubusercontent.com/sgerrand/alpine-pkg-glibc/master/sgerrand.rsa.pub && \
