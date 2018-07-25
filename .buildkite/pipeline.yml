@@ -44,6 +44,7 @@ steps:
   - label: ":npm: Semantic release"
     branches: master
     command: semantic-release
+    timeout_in_minutes: 2
     plugins:
       docker-compose#master:
         config:
