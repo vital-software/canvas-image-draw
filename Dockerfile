@@ -1,14 +1,14 @@
-FROM node:8.9
+FROM node:10
 
 # Install common dependencies
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     apt-get dist-upgrade -y && \
     apt-get install -y \
-        ca-certificates \
-        git \
-        openssl \
-        libpng12-dev \
-        tzdata && \
+    ca-certificates \
+    git \
+    openssl \
+    libpng12-dev \
+    tzdata && \
     rm -rf /var/lib/apt/lists/* && \
     apt-get clean
 
