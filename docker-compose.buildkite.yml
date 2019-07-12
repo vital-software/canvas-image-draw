@@ -3,7 +3,6 @@ version: "2.3"
 services:
   base:
     environment:
-      - CODECOV_TOKEN
       - GH_TOKEN
       - GH_ORG
       - NPM_TOKEN
@@ -15,5 +14,4 @@ services:
       - BUILDKITE_BRANCH
       - BUILDKITE_PROJECT_SLUG
       - BUILDKITE_PULL_REQUEST
-      - 'GK_LOCK_COMMIT_EMAIL=greenkeeper[bot]@users.noreply.github.com'
       - 'GIT_EMAIL=te+semantic-release@vitaler.co'
