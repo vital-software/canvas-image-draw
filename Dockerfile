@@ -7,7 +7,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     ca-certificates \
     git \
     openssl \
-    libpng12-dev \
+    build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev \
     tzdata && \
     rm -rf /var/lib/apt/lists/* && \
     apt-get clean
