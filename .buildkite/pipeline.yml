@@ -30,12 +30,15 @@ steps:
 
   - wait
 
+  - block: ":rocket: Publish!"
+    branches: master
+
   - label: ":npm: Semantic release"
     branches: master
     command: semantic-release
     timeout_in_minutes: 2
     plugins:
-      docker-compose#master:
+      vital-software/docker-compose#vital-v1.8:
         config:
           - docker-compose.yml
           - docker-compose.buildkite.yml
