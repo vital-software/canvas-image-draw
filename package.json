@@ -1,6 +1,6 @@
 {
   "name": "canvas-image-draw",
-  "version": "1.4.0",
+  "version": "3.2.0",
   "description": "Draw a cropped image to a <canvas> element",
   "license": "MIT",
   "repository": "vital-software/canvas-image-draw",
