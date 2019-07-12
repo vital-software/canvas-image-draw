@@ -35,7 +35,6 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "rm -rf lib && NODE_ENV=production babel app --out-dir lib --ignore spec.js,test.js",
-    "format": "prettier-eslint \"app/**/*.{js,jsx}\" --write",
     "lint": "eslint \"app/**/*.{js,jsx}\" --quiet",
     "test": "jest --coverage"
   },
@@ -73,18 +72,18 @@
     }
   },
   "devDependencies": {
+    "@babel/cli": "7.5.0",
+    "@babel/core": "7.5.4",
+    "@babel/plugin-proposal-object-rest-spread": "7.5.4",
+    "@babel/preset-env": "7.5.4",
     "@semantic-release/git": "4.0.0",
-    "babel-cli": "6.26.0",
     "babel-eslint": "10.0.2",
-    "babel-jest": "22.4.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "6.26.0",
-    "canvas-prebuilt": "1.6.5-prerelease.1",
+    "babel-jest": "24.8.0",
+    "canvas": "2.5.0",
     "eslint": "6.0.1",
     "husky": "3.0.0",
-    "jest": "22.4.0",
-    "prettier-eslint-cli": "5.0.0",
-    "semantic-release": "15.0.0",
-    "vitalizer": "3.0.0"
+    "jest": "24.8.0",
+    "semantic-release": "15.0.0"
   },
   "dependencies": {
     "exif-js": "2.1.1"
