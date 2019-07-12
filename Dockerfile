@@ -1,14 +1,14 @@
-FROM node:8.9
+FROM node:10
 
 # Install common dependencies
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     apt-get dist-upgrade -y && \
     apt-get install -y \
-        ca-certificates \
-        git \
-        openssl \
-        libpng12-dev \
-        tzdata && \
+    ca-certificates \
+    git \
+    openssl \
+    build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev \
+    tzdata && \
     rm -rf /var/lib/apt/lists/* && \
     apt-get clean
 
@@ -24,8 +24,6 @@ WORKDIR /app
 ENV PATH=./node_modules/.bin:$PATH
 
 ADD package.json yarn.lock /app/
-RUN yarn install --ignore-scripts
-
 ADD . /app
 
-RUN yarn install
+RUN yarn install --ignore-optional
