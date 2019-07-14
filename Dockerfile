@@ -26,4 +26,8 @@ ENV PATH=./node_modules/.bin:$PATH
 ADD package.json yarn.lock /app/
 ADD . /app
 
+# Install deps
 RUN yarn install --ignore-optional
+
+# Build lib/ folder
+RUN yarn build
