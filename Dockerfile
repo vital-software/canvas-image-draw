@@ -1,4 +1,4 @@
-FROM node:10
+FROM quay.io/vital/node:lts
 
 # Install common dependencies
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
